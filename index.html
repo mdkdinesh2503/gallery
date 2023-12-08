@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title name  -->
+    <title>M D K | G A L L E R Y</title>
+
+    <!-- Title logo link -->
+    <link rel="shortcut icon" sizes="32x32" href="./images/Gallery_Title.png" />
+
+    <!-- font awesome style sheet link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header section starts -->
+    <header>
+        <i class="fas fa-image"></i>
+
+        <h2 class="topic" title="MY GALLERY">
+            <span class="hide">I</span>
+            <span class="hide">M</span>
+            <span class="hide">A</span>
+            <span class="hide">G</span>
+            <span class="hide">E</span>&numsp;
+            <span>G</span>
+            <span>A</span>
+            <span>L</span>
+            <span>L</span>
+            <span>E</span>
+            <span>R</span>
+            <span>Y</span>
+        </h2>
+    </header>
+    <!-- Header section ends -->
+
+    <!-- Gallery section starts -->
+    <section class="gallery">
+        <div class="gallery-content">
+            <img src="./images/1_1.jpg" alt="Dinesh Kumar M">
+            <img src="./images/1_2.jpg" alt="Dinesh Kumar M">
+            <img src="./images/1_3.jpg" alt="Dinesh Kumar M">
+            <img src="./images/1_4.jpg" alt="Dinesh Kumar M">
+            <img src="./images/1_5.jpg" alt="Dinesh Kumar M">
+            <img src="./images/1_6.jpg" alt="Dinesh Kumar M">
+        </div>
+
+        <div class="gallery-content">
+            <img src="./images/2_1.jpg" alt="Dinesh Kumar M">
+            <img src="./images/2_2.jpg" alt="Dinesh Kumar M">
+            <img src="./images/2_3.jpg" alt="Dinesh Kumar M">
+            <img src="./images/2_4.jpg" alt="Dinesh Kumar M">
+            <img src="./images/2_5.jpg" alt="Dinesh Kumar M">
+            <img src="./images/2_6.jpg" alt="Dinesh Kumar M">
+            <img src="./images/2_7.jpg" alt="Dinesh Kumar M">
+        </div>
+
+        <div class="gallery-content">
+            <img src="./images/3_1.jpg" alt="Dinesh Kumar M">
+            <img src="./images/3_2.jpg" alt="Dinesh Kumar M">
+            <img src="./images/3_3.jpg" alt="Dinesh Kumar M">
+            <img src="./images/3_4.jpg" alt="Dinesh Kumar M">
+            <img src="./images/3_5.jpg" alt="Dinesh Kumar M">
+            <img src="./images/3_6.jpg" alt="Dinesh Kumar M">
+        </div>
+
+        <div class="gallery-content">
+            <img src="./images/4_1.jpg" alt="Dinesh Kumar M">
+            <img src="./images/4_2.jpg" alt="Dinesh Kumar M">
+            <img src="./images/4_3.jpg" alt="Dinesh Kumar M">
+            <img src="./images/4_4.jpg" alt="Dinesh Kumar M">
+            <img src="./images/4_5.jpg" alt="Dinesh Kumar M">
+            <img src="./images/4_6.jpg" alt="Dinesh Kumar M">
+        </div>
+    </section>
+    <br><br><br><br>
+    <!-- Gallery section ends -->
+
+    <!-- footer section starts  -->
+    <footer>
+        <p> --- © 2023, All rights reserved by <span> DINESH KUMAR.M </span>--- </p>
+    </footer>
+    <!-- footer section ends -->
+
+</body>
+
+<style>
+    /*----------------------------------------------------------------------
+                            OVERALL STYLE STARTS HERE                         
+     ----------------------------------------------------------------------*/
+
+    :root {
+        --white: #fff;
+        --brown: #414141;
+        --light-brown: #b2a9a9;
+        --border: .2rem solid var(--brown);
+        --bold-border: .2rem solid var(--white);
+        --text-shadow: .1rem .1rem .1rem var(--brown);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background: var(--light-brown);
+    }
+
+    *::-webkit-scrollbar {
+        width: .4rem;
+        height: 1rem;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background: var(--brown);
+    }
+
+    *::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    html {
+        min-width: 100%;
+        min-height: 100vh;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        scroll-padding-top: 6rem;
+    }
+
+    /*----------------------------------------------------------------------
+                            HEADER SECTION STARTS HERE                         
+     ----------------------------------------------------------------------*/
+
+    header {
+        position: fixed;
+        padding: .5rem 9%;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header:hover i,
+    header:hover .topic span {
+        color: var(--brown);
+        background: var(--white);
+
+    }
+
+    header i {
+        color: var(--white);
+        background: var(--brown);
+        border: var(--border);
+        padding: .8rem;
+        font-size: 2rem;
+        margin: .5rem -.3rem .5rem .5rem;
+        border-radius: 5rem;
+    }
+
+    header .topic {
+        font-size: 2rem;
+        margin: 0 auto;
+        width: fit-content;
+        position: relative;
+        margin: 1rem;
+    }
+
+    header .topic span {
+        background: var(--brown);
+        padding: .3rem;
+        color: var(--white);
+        border: var(--border);
+    }
+
+    header.sticky {
+        border-bottom: var(--bold-border);
+    }
+
+    @media (max-width: 1000px) {
+
+        header i,
+        header .topic {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (max-width: 800px) {
+        header .topic .hide {
+            display: none;
+        }
+
+        header .topic {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (max-width: 500px) {
+
+        header i,
+        header .topic {
+            font-size: 1rem;
+        }
+    }
+
+    /*----------------------------------------------------------------------
+                            GALLERY SECTION STARTS HERE                         
+     ----------------------------------------------------------------------*/
+
+    .gallery {
+        padding: 8rem 9%;
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 80vh;
+    }
+
+    .gallery .gallery-content {
+        flex: 25%;
+        max-width: 25%;
+    }
+
+    .gallery .gallery-content img {
+        border: var(--border);
+        vertical-align: middle;
+        width: 100%;
+        margin-top: -.1rem;
+    }
+
+    .gallery .gallery-content:nth-child(2),
+    .gallery .gallery-content:nth-child(3),
+    .gallery .gallery-content:nth-child(4) {
+        margin-left: -.1rem;
+    }
+
+    @media (max-width: 800px) {
+        .gallery .gallery-content {
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .gallery .gallery-content {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+
+    /*----------------------------------------------------------------------
+                            FOOTER SECTION STARTS HERE                         
+     ----------------------------------------------------------------------*/
+
+    footer {
+        text-align: center;
+        padding: 1rem 9%;
+        border-top: var(--bold-border);
+    }
+
+    footer p {
+        font-size: 1.2rem;
+        color: var(--brown);
+    }
+
+    footer p span {
+        font-weight: bold;
+        text-shadow: var(--text-shadow);
+    }
+</style>
+
+<script>
+
+    /*--------- Header Effect ---------- */
+    window.onscroll = () => {
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+    }
+
+    /*--------- ctrl button lock Starts ---------- */
+    document.onkeydown = function (e) {
+        if (e.ctrlKey) {
+            return false;
+        }
+    };
+
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+</script>
+
+</html>
